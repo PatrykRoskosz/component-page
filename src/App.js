@@ -1,13 +1,15 @@
 import Button from "./components/Button/Button";
+import { FaBeer } from "react-icons/fa";
 
 function App() {
 	return (
 		<>
 			<div>App</div>
 			<Button success rounded outline>
+				<FaBeer />
 				kliknij mnie
 			</Button>
-			<Button danger outline onClick={()=> console.log('hej')}>
+			<Button danger outline>
 				kliknij mnie
 			</Button>
 			<Button warning>kliknij mnie</Button>
