@@ -1,8 +1,7 @@
-import Button from "./components/Button/Button";
-import { FaBeer , FaCottonBureau} from "react-icons/fa";
+import Button from "../components/Button/Button";
+import { FaBeer } from "react-icons/fa";
 
-function App() {
-	
+function ButtonPage () {
 	return (
 		<>
 			<div>App</div>
@@ -20,12 +19,8 @@ function App() {
 			<Button primary rounded>
 				kliknij mnie
 			</Button>
-			<Button danger rounded outline>
-				<FaCottonBureau />
-				Kamilka
-			</Button>
 		</>
 	);
 }
 
-export default App;
+export default ButtonPage;
