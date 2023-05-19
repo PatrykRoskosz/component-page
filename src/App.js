@@ -18,6 +18,7 @@ function App() {
 				kliknij mnie
 			</Button>
 			<Button primary rounded>
+			<FaCottonBureau />
 				kliknij mnie
 			</Button>
 			<Button danger rounded outline>
