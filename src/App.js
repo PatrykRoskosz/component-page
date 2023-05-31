@@ -1,8 +1,11 @@
+import Button from "./components/Button/Button";
+
 function App() {
+ 
 	return (
 		<>
-    <h1>siema</h1>
 			<div>App</div>
+      <Button primary secondary>Hej</Button>
 		</>
 	);
 }
