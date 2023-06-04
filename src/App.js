@@ -1,12 +1,29 @@
-import Button from "./components/Button/Button";
+import Sidebar from "./components/Sidebar/Sidebar";
+import Route from "./components/Route/Route";
+import AccordionPage from "./pages/AccordionPage";
+import DropdownPage from "./pages/DropdownPage";
+import ButtonPage from "./pages/ButtonPage";
+import ModalPage from "./pages/ModalPage"
 
 function App() {
- 
 	return (
-		<>
-			<div>App</div>
-      <Button primary secondary>Hej</Button>
-		</>
+		<div className='container mx-auto grid grid-cols-6 gap-4 mt-4'>
+			<Sidebar />
+			<div className='col-span-5'>
+			<Route path='/'>
+					<DropdownPage />
+				</Route>
+				<Route path='/accordion'>
+					<AccordionPage />
+				</Route>
+				<Route path='/buttons'>
+					<ButtonPage />
+				</Route>
+				<Route path='/modal'>
+					<ModalPage />
+				</Route>
+			</div>
+		</div>
 	);
 }
 
